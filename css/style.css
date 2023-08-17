@@ -1,5 +1,6 @@
 body{
     margin: 0 0;
+    max-width: 100vw;
 
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2rem;
@@ -62,12 +63,18 @@ nav button{
     border: -15px black;
 }
 
-#NavTab{
-    background-color: blue;
-    max-width: 100vw;
-    min-height:90vh;
+#TabContent{
+    min-height: 90vh;
+    background-color: gray;
+    align-items: center;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+
+
+
 
 footer{
     background-color: black;

@@ -1,0 +1,55 @@
+.card{
+    min-width: 400px;
+    max-width: 400px;
+
+    max-height: 450px;
+    height: 450px;
+    
+    margin: 10px;
+    padding: 5px;
+    border: solid black 5px;
+    border-radius: 5%;
+
+    background-color: white;
+    align-items: start;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+
+    text-overflow: ellipsis;
+}
+.card img{
+    width: 100%;
+    min-height: 50%;
+    max-height: 50%;
+    object-fit:contain;
+
+    border: solid black 2.5px;
+    border-radius: 10%;
+
+    background-color: black;
+    text-align: center;
+}
+
+.card h1 {
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Batasi ke 2 baris */
+    -webkit-box-orient: vertical;
+}
+
+p.description {
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Batasi ke 3 baris */
+    -webkit-box-orient: vertical;
+}
