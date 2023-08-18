@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/card.css">
 </head>
 <body>
+    <!--Main-->
     <section id="Hero">
         <div>
             <h1> Rama Naufal Alim</h1>
@@ -15,12 +16,46 @@
             <img src="img/photo.png" alt="">
         </div>
     </section>
+    <!--Nav-->
     <Nav>
         <button>About Me</button>
         <button>My Project</button>
         <button>To Be Continued</button>
     </Nav>
-    <section id="TabContent">
+    <!--TabContent-->
+
+    <!--About Me-->
+    <section id="AboutMe" class="TabContent hide">
+        <div class="card">
+        </div>
+        <div id="yt" class="card">
+            <img class="circle" src="" alt="Not Loaded">
+            <div class="text">
+                <h1>Youtube Channel</h1>
+                <p>Not Loaded</p>
+                <button id="GoToYT">Go to Channel</button>
+            </div>
+        </div>
+    </section>
+
+    <!--Project-->
+    <section id="Project" class="TabContent hide">
+        <div class="card">
+            <img src="img/BG.gif" alt="">
+            <div class="text">
+                <h1>Project 1</h1>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti qui iure tempore fuga tenetur deserunt eaque repudiandae, provident labore quasi dolorum reprehenderit ut consequatur quod id totam magnam, quae perferendis?</p>
+            </div>
+        </div>
+    </section>
+
+    <!--other-->
+    <section id="Other" class="TabContent hide">
+        <div class="card">
+            <img src="img/BG.gif" alt="">
+            <h1>Project 1</h1>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti qui iure tempore fuga tenetur deserunt eaque repudiandae, provident labore quasi dolorum reprehenderit ut consequatur quod id totam magnam, quae perferendis?</p>
+        </div>
         <div class="card">
             <img src="img/BG.gif" alt="">
             <h1>Project 1</h1>
@@ -30,5 +65,6 @@
 
 <!--Script-->
 <script src="js/script.js"></script>
+<script src="js/youtubeAPI.js"></script>
 </body>
 </html>

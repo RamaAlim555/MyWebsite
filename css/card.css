@@ -1,38 +1,74 @@
 .card{
-    min-width: 400px;
-    max-width: 400px;
-
-    max-height: 450px;
-    height: 450px;
-    
-    margin: 10px;
-    padding: 5px;
-    border: solid black 5px;
-    border-radius: 5%;
-
-    background-color: white;
-    align-items: start;
     display: flex;
-    justify-content: start;
-    flex-direction: column;
+    font-size: 1.2rem;
 
-    text-overflow: ellipsis;
+    color: black;
+    background-color: white;
+    width: 100%;
+
+    min-height: 30vh;
+    height: max-content;
+
+    border: solid black 5px;
+    margin: 10px 20px;
+}
+.circle{
+    border-radius: 50%;
+}
+@media (min-width: 700px){
+.card{
+    flex-wrap: nowrap;
 }
 .card img{
+    max-height: 50%;
+    height: auto;
+    max-width: 30%;
+    min-width: 100px;
+    width: auto;
+    object-fit:contain;
+    
+    border: solid 2.5px black;
+    
+    margin: 10px 10px;
+    background-color: black;
+}
+.card .text{
+    margin-left: 25px;
     width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}}
+
+@media (max-width: 700px){
+.card{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card img{
+    width: 50%;
     min-height: 50%;
     max-height: 50%;
     object-fit:contain;
-
+    
     border: solid black 2.5px;
-    border-radius: 10%;
-
     background-color: black;
     text-align: center;
 }
+.card .text{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}}
+.card .text{
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow:hidden;
+}
 
-.card h1 {
-    font-size: 1.5rem;
+.card .text h1 {
+    font-size:xx-large;
     font-family: 'Times New Roman', Times, serif;
     color: black;
     margin-bottom: 0;
@@ -43,8 +79,8 @@
     -webkit-box-orient: vertical;
 }
 
-p.description {
-    font-size: 1.2rem;
+.card .text p {
+    font-size: xx-large;
     font-family: 'Times New Roman', Times, serif;
     color: black;
     overflow: hidden;
@@ -52,4 +88,15 @@ p.description {
     display: -webkit-box;
     -webkit-line-clamp: 3; /* Batasi ke 3 baris */
     -webkit-box-orient: vertical;
+}
+
+.card .text button{
+    font-size: large;
+    background-color: blue;
+    color: white;
+    padding: 10px 10px;
+}
+.card .text button:hover{
+    background-color: aqua;
+    color: black;
 }
